@@ -2,14 +2,6 @@
 
 CUR=`pwd`
 
-echo "~/.tools"
-cp -Rf tools ~/.tools
-ls -al ~/.tools
-
-
-echo "~/.screenrc"
-cp -f screenrc ~/.screenrc
-
 if [ ! -e ~/.gitconfig.backup ]; then
   echo "backup .gitconfig .."
   mv -f ~/.gitconfig ~/.gitconfig.backup
@@ -18,14 +10,6 @@ fi
 echo "~/.gitconfig"
 cp -f gitconfig ~/.gitconfig
 
-echo "Enter your name for git user.name:\c"
-read GIT_USER_NAME
-
-echo "Enter your email for git user.email:\c"
-read GIT_USER_EMAIL
-
-git config --global --replace-all user.name $GIT_USER_NAME
-git config --global --replace-all user.email $GIT_USER_EMAIL
 git config --global --replace-all core.excludesfile ~/.gitconfig
 
 echo "~/.gitignore"
@@ -43,29 +27,6 @@ cat zshrc_addons >> ~/.zshrc
 
 echo "Done"
 
-echo "Removing existing vim dotfiles"
-
-if [ ! -e ~/.vim.backup ]; then
-  echo "backup .vim .."
-  mv -f ~/.vim ~/.vim.backup
-fi
-if [ ! -e ~/.vimrc.backup ]; then
-  echo "backup .vimrc .."
-  mv -f ~/.vimrc ~/.vimrc.backup
-fi
-
-rm -Rf ~/.vim
-rm -f ~/.vimrc
-
-echo ".vimrc"
-cp -f vimrc ~/.vimrc
-
-echo "Cloning akita vimfiles"
-
-git clone git://github.com/akitaonrails/vimfiles.git ~/.vim
-
-cd ~/.vim
-
 echo "Updating submodules"
 
 git submodule init
@@ -75,13 +36,6 @@ git submodule foreach git pull
 
 cd $CUR
 
-echo "Patching vimfiles/vimrc"
-
-cp patches/vimfiles-vimrc.patch ~/.vim/ && cd ~/.vim/ && cat vimfiles-vimrc.patch | patch && rm vimfiles-vimrc.patch && cd $CUR
-
 echo "\nDone"
 
 echo "To do local customization for zsh place code into ~/.zshrc.local\n\n"
-
-echo "To patch vim syntastic plugin to support 1.9 syntax do:\n"
-echo "cp patches/syntastic.patch ~/.vim/bundle/syntastic/ && cd ~/.vim/bundle/syntastic/ && cat syntastic.patch | patch -p\n"
