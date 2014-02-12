@@ -1,6 +1,6 @@
 {
 	"auto_complete_delay": 100,
-	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	// "color_scheme": "Packages/User/Espresso Soda.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"font_size": 12.0,
