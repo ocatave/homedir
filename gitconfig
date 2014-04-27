@@ -1,25 +1,26 @@
 [user]
-    name = Sergey Shishkalov
-    email = sergeyshishkalov@gmail.com
+  name = Ilya Shabanov
+  email = ishaba@me.com
 [push]
-    default = tracking
+  default = tracking
 [color]
-    diff = auto
-    status = auto
-    branch = auto
-    interactive = auto
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
 [diff]
-    renamelimit = 0
+  renamelimit = 0
 [alias]
-    st = status
-    ci = commit
-    br = branch -v
-    co = checkout
-    lg = log --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
-    lf = log --name-status --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
-    ll = log -10 --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
-    gr = log --graph --pretty=format:\"%Cred%h %Cblue%ar%Creset %Cgreen%an%Creset %s %Cred%d\"
-    where = branch -av --contains
+  st = status
+  ci = commit
+  br = branch -v
+  co = checkout
+  lg = log --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
+  lf = log --name-status --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
+  ll = log -10 --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
+  gr = log --graph --pretty=format:\"%Cred%h %Cblue%ar%Creset %Cgreen%an%Creset %s %Cred%d\"
+  where = branch -av --contains
 [core]
-    excludesfile = /home/s0ber/.gitignore
-    pager = less -FRSX
+  excludesfile = /home/ishaba/.gitignore
+  pager = less -FRSX
