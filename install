@@ -2,11 +2,14 @@
 
 CUR=`pwd`
 
-echo "~/.gitconfig"
+echo "Updating sublime settings"
+ln -sf $CUR/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+cp -f sublime/Russian-English.dic ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Russian-English.dic
+cp -f sublime/Russian-English.aff ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Russian-English.aff
+
+echo "Updating git config"
 cp -f gitconfig ~/.gitconfig
 git config --global --replace-all core.excludesfile ~/.gitconfig
-
-echo "~/.gitignore"
 cp -f gitignore ~/.gitignore
 
 echo "Installing zshkit"
@@ -14,9 +17,8 @@ rm -Rf ~/.zshkit
 cp -Rf zshkit ~/.zshkit
 ~/.zshkit/install
 
-echo "Adding homedir extra lines to ~/.zshrc"
+echo "Adding extra lines to ~/.zshrc"
 cat zshrc_addons >> ~/.zshrc
-echo "Done"
 
 echo "Updating submodules"
 git submodule init
@@ -25,4 +27,4 @@ git submodule foreach git co master
 git submodule foreach git pull
 
 cd $CUR
-echo "Done"
+echo "Install complete!"

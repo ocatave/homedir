@@ -5,7 +5,6 @@ if [[ $mydir = . ]]; then
 fi
 
 dest=$HOME
-echo My Directory: $mydir
 
 if [[ -f $mydir/lang ]]; then
   cat $mydir/lang > $HOME/.zshenv
