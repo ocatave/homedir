@@ -12,7 +12,7 @@ Fork it and tune up for yourself
 cd homedir
 ./install local
 ```
-**Note:** This will replace your files
+**Note:** this will replace your files
 
 Change default shell to zsh:
 
