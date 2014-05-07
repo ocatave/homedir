@@ -1,17 +1,16 @@
-My OSx homedir
+My homedir
 ======
-zshkit, gitcofig, sublime settings, iterm2 colors
+zshkit, gitconfig, sublime settings, iterm2 colors
 
 Fork it and tune up for yourself
 ------
 
-Deploy:
-Do not forget update gitconfig name\email
+**Deploy:**
 ```bash
 cd homedir
 ./install local
 ```
-**NOTE:** This will replace your files
+**Note:** This will replace your files
 
 Change default shell to zsh:
 
