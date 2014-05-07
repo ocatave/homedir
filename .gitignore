@@ -1,8 +1,0 @@
-*.log
-*~
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-node_modules
-.sass-cache
