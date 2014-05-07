@@ -24,7 +24,7 @@ if [ $GIT_USER_NAME ] && [ $GIT_USER_NAME ]; then
   git config --global --replace-all user.email $GIT_USER_EMAIL
 fi
 
-git config --global --replace-all core.excludesfile ~/.gitconfig
+git config --global --replace-all core.excludesfile ~/.gitignore
 cp -f gitignore ~/.gitignore
 
 
