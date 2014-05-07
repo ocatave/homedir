@@ -28,6 +28,9 @@ git config --global --replace-all core.excludesfile ~/.gitignore
 cp -f gitignore ~/.gitignore
 
 
+echo "~/.gemrc"
+cp -f gemrc ~/.gemrc
+
 echo "Installing zshkit"
 rm -Rf ~/.zshkit
 cp -Rf zshkit ~/.zshkit
