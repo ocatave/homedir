@@ -1,6 +1,6 @@
 My homedir
 ======
-zshkit, gitconfig, sublime settings, iterm2 colors
+zsh promt, iterm2 colors:
 
 ![alt text](https://raw.githubusercontent.com/ishaba/homedir/master/screenshot.png "screenshot")
 

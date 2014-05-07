@@ -1,11 +1,23 @@
 {
-  "tab_size": 2,
-  "dictionary": "Packages/Russian-English.dic",
-  "spell_check": true,
-  "highlight_line": true,
-  "detect_indentation": false,
-  "translate_tabs_to_spaces": true,
-  "ensure_newline_at_eof_on_save": false,
-  "trim_trailing_white_space_on_save": true,
-  "folder_exclude_patterns": [".sass-cache", "node_modules", ".svn", ".git", ".hg", "CVS"]
+	"detect_indentation": false,
+	"dictionary": "Packages/Russian-English.dic",
+	"ensure_newline_at_eof_on_save": false,
+	"folder_exclude_patterns":
+	[
+		".sass-cache",
+		"node_modules",
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"spell_check": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
