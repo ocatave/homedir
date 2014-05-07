@@ -2,15 +2,31 @@
 
 CUR=`pwd`
 
+if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/ ]; then
 echo "Updating sublime settings"
-ln -sf $CUR/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-cp -f sublime/Russian-English.dic ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Russian-English.dic
-cp -f sublime/Russian-English.aff ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Russian-English.aff
+  ln -sf $CUR/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+  cp -f sublime/Russian-English.dic ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Russian-English.dic
+  cp -f sublime/Russian-English.aff ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Russian-English.aff
+fi
+
 
 echo "Updating git config"
+
 cp -f gitconfig ~/.gitconfig
+
+echo "Enter your name for git user.name:\c"
+read GIT_USER_NAME
+echo "Enter your email for git user.email:\c"
+read GIT_USER_EMAIL
+
+if [ $GIT_USER_NAME ] && [ $GIT_USER_NAME ]; then
+  git config --global --replace-all user.name $GIT_USER_NAME
+  git config --global --replace-all user.email $GIT_USER_EMAIL
+fi
+
 git config --global --replace-all core.excludesfile ~/.gitconfig
 cp -f gitignore ~/.gitignore
+
 
 echo "Installing zshkit"
 rm -Rf ~/.zshkit
