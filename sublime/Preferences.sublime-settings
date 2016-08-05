@@ -11,6 +11,8 @@
 		".hg",
 		"CVS"
 	],
+	"font_size": 11,
+	"hayaku_CSS_prefixes_disable": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -18,6 +20,6 @@
 	],
 	"spell_check": true,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": false,
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
