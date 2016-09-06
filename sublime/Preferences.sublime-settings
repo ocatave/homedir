@@ -1,5 +1,5 @@
 {
-	"detect_indentation": true,
+	"detect_indentation": false,
 	"dictionary": "Packages/Russian-English.dic",
 	"ensure_newline_at_eof_on_save": false,
 	"folder_exclude_patterns":
