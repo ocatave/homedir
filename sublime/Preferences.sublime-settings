@@ -1,25 +1,26 @@
 {
-	"detect_indentation": false,
-	"dictionary": "Packages/Russian-English.dic",
-	"ensure_newline_at_eof_on_save": false,
-	"folder_exclude_patterns":
-	[
-		".sass-cache",
-		"node_modules",
-		".svn",
-		".git",
-		".hg",
-		"CVS"
-	],
-	"font_size": 11,
-	"hayaku_CSS_prefixes_disable": true,
-	"highlight_line": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"spell_check": true,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+  "detect_indentation": false,
+  "draw_white_space": "all",
+  "dictionary": "Packages/Russian-English.dic",
+  "ensure_newline_at_eof_on_save": false,
+  "folder_exclude_patterns":
+  [
+    ".sass-cache",
+    "node_modules",
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS"
+  ],
+  "font_size": 11,
+  "hayaku_CSS_prefixes_disable": true,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "spell_check": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
 }
