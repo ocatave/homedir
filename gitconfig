@@ -1,8 +1,8 @@
 [user]
-  name = Ilya Shabanov
-  email = ishaba@me.com
+  name = Slava Koreshkov
+  email = slava.dev.ux@gmail.com
 [push]
-  default = tracking
+	default = simple
 [color]
   ui = true
   diff = auto
@@ -22,5 +22,10 @@
   gr = log --graph --pretty=format:\"%Cred%h %Cblue%ar%Creset %Cgreen%an%Creset %s %Cred%d\"
   where = branch -av --contains
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/octave/.gitignore
   pager = less -FRSX
+	editor = code --wait
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
