@@ -2,7 +2,7 @@
   name = Slava Koreshkov
   email = slava.dev.ux@gmail.com
 [push]
-	default = simple
+  default = simple
 [color]
   ui = true
   diff = auto
@@ -22,10 +22,10 @@
   gr = log --graph --pretty=format:\"%Cred%h %Cblue%ar%Creset %Cgreen%an%Creset %s %Cred%d\"
   where = branch -av --contains
 [core]
-	excludesfile = /Users/octave/.gitignore
+  excludesfile = /Users/octave/.gitignore
   pager = less -FRSX
-	editor = code --wait
+  editor = code --wait
 [pull]
-	rebase = true
+  rebase = true
 [rebase]
-	autosquash = true
+  autosquash = true
